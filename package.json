@@ -13,6 +13,9 @@
     "cssnano": "^6.0.1",
     "gh-pages": "^3.0.0",
     "postcss-preset-env": "^8.5.1",
+    "pug": "^3.0.2",
+    "pug-filters": "^4.0.0",
+    "pug-loader": "^1.0.2",
     "vue": "^3.2.47"
   },
   "devDependencies": {
@@ -22,6 +25,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "tailwindcss": "^3.3.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vue-cli-plugin-tailwind": "~3.0.0"
   }
 }

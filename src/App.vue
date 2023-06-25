@@ -1,10 +1,15 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
-<template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<template lang="pug">
+div.w-screen
+SiteNavigation
 </template>
 
+<script>
+  import SiteNavigation from './components/SiteNavigation.vue'
+
+  export default{
+    name: 'app',
+    components: {
+      SiteNavigation: SiteNavigation
+    }
+  }
+</script>
