@@ -1,10 +1,12 @@
 <template lang="pug">
-div.w-screen
-SiteNavigation
+div.overflow-hidden.w-screen
+  SiteNavigation.flex.flex-wrap.w-full
+  RouterView
 </template>
 
 <script>
-  import SiteNavigation from './components/SiteNavigation.vue'
+  import { RouterView } from 'vue-router'
+  import SiteNavigation from '@/components/SiteNavigation.vue'
 
   export default{
     name: 'app',

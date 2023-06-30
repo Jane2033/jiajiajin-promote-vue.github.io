@@ -1,12 +1,18 @@
 <template lang="pug">
-header.w-full.absolute.top-0.left-0
-    nav.w-full.bg-blue-700.flex
-        ul.flex.flex-col.justify-between.text-white
-            li 服務特色
-            li 服務區域
+header.absolute.top-0.left-0.w-screen.bg-blue-700
+    nav.w-full.flex.flex-row.justify-between.items-center.mx-16.my-8
+        routerlink(:to="{ name:'home' }")
+            img.h-12(src='/logo.svg' alt='logo')
+        ul.flex.flex-row.text-white.justify-between.items-center
+            routerlink(:to="{ name:'home' }")
+                li.px-4 服務特色
+            routerlink(:to="{ name:'home' }")
+                li.px-4 服務區域
+            routerlink(:to="{ name:'home' }")
+                li.px-4 服務評價
 </template>
 
-<script>
-
+<script setup>
+import { RouterLink } from 'vue-router'
 
 </script>
